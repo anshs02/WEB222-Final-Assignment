@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB222 Final Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="scroll-up-btn">
+    <i class="fas fa-angle-up"></i>
+  </div>
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo"><a href="#">WEB222</a></div>
+      <ul class="menu">
+        <li><a href="#home" class="menu-btn">Home</a></li>
+        <li><a href="#about" class="menu-btn">About</a></li>
+        <li><a href="#education" class="menu-btn">Education</a></li>
+        <li><a href="#contact" class="menu-btn">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- home section start -->
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="column left" style="width: 60%;">
+          <div class="text-2">Ansh Singh</div>
+          <div class="text-1">Software Engineer</div>
+          <a href="./Files/Ansh-Singh-Sachdev.pdf" download class="fas fa-download"> Resume</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="column right" style="width: 40%;">
+            <img src="./images/Self.jpg" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- about section start -->
+  <section class="about" id="about">
+    <div class="max-width">
+      <div class="about-content">
+        <div class="column left" style="margin-bottom: auto">
+          <h4 class="title">Basic Information</h4>
+          <table>
+            <tr>
+              <td><strong>NAME:</strong></td>
+              <td>Ansh Singh Sachdev</td>
+            </tr>
+            <tr>
+              <td><strong>EMAIL:</strong></td>
+              <td>asachdev2@myseneca.ca</td>
+            </tr>
+            <tr>
+              <td><strong>COURSE:</strong></td>
+              <td>Web Programming Principles</td>
+            </tr>
+            <tr>
+              <td><strong>SECTION:</strong></td>
+              <td>ZBB</td>
+            </tr>
+            <tr>
+              <td><strong>STUDENT ID:</strong></td>
+              <td>156187213</td>
+            </tr>
+            <tr>
+              <td><strong>INSTRUCTOR:</strong></td>
+              <td>Mr. Noman Atique</td>
+            </tr>
+          </table>
+        </div>
+        <div class="column right">
+          <h4 class="title">About me and Academic Honesty</h4>
+          <p>I am an international student studying at Seneca College for a diploma in computer programming. I am from India. I am excited to connect with you and share my enthusiasm for computer science and software development.<p><br>
+          <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of
+            this assessment has been copied manually or electronically from any other source (including web sites)
+            except for the information supplied by the WEB222 instructors and / or made available in this assessment for
+            my use. I also declare that no part of this assignment has been distributed to other students.</p>
+          <br>
+          <table>
+            <tr>
+              <td> <strong>DATE:</strong></td>
+              <td>Aug 14, 2022</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- education section start -->
+  <section class="education" id="education">
+    <div class="max-width">
+      <h2 class="title">Education</h2>
+      <div style="padding: 10pt;"class="education-content">
+        <div class="column" style="background-color:rgb(137 52 223 / 82%); width: 30%;">
+          <div class="text" style="text-align:center;">
+            <h3 style="margin-top: 30px;">Diploma</h3>
+            <p>2022-Present</p>
+          </div>
+        </div>
+        <div class="column" style="background-color:#f7f1f1; width: 70%;">
+          <h2>Seneca College</h2>
+          <h6><i>Diploma in Computer Programming</i></h6>
+          <p style="margin-top: 8px;">Studying Computer Programming (CPP).</p>        
+        </div>  
+      </div>
+
+      <div style="padding: 10pt;" class="education-content">
+        <div class="column" style="background-color:rgb(137 52 223 / 82%); width: 30%;">
+          <div class="text" style="text-align:center;">
+            <h3 style="margin-top: 30px;">High School</h3>
+            <p>2006-2021</p>
+          </div>
+        </div>
+        <div class="column" style="background-color:#f7f1f1; width: 70%;">
+          <h2>Guru Harkrishan Public School</h2>
+          <h6><i>Completed Schooling</i></h6>
+          <p style="margin-top: 8px;">Majors: Physics, Chemistry, Maths, Computer science</p>        
+        </div>  
+      </div>
+    </div>
+  </section>
+
+
+  <!-- contact section start -->
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title">Contact me</h2>
+      <div class="contact-content">
+        <form action="https://httpbin.org/post" method="post" target="_blank">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Your First Name" required="" />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <label>Phone number</label>
+            <input type="tel" name="phone" placeholder="Phone Number" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" required>
+          </div>
+          <div class="form-group">
+            <label>Address</label>
+            <input name="address" placeholder="Your Address" required />
+          </div>
+          <div class="form-group">
+            <label>City</label>
+            <datalist id="CanadianCity">
+              <option value="Alberta">
+              <option value="British Columbia">
+              <option value="Manitoba">
+              <option value="New Brunswick">
+              <option value="Nova Scotia">
+              <option value="Ontario">
+              <option value="Yukon">
+            </datalist>
+
+            <input type="text" placeholder="Your City" name="city" list="CanadianCity" required>
+          </div>
+          <div class="form-group">
+            <label>Postal Code</label>
+            <input type="text" name="zipcode" placeholder="Your Postal Code"
+              pattern="^(?!.*[DFIOQU])[A-VXY][0-9][A-Z] ?[0-9][A-Z][0-9]$" required />
+          </div>
+          <div class="form-group">
+            <label>Please select one option</label>
+            <div class="radio-container">
+              <ul>
+                <li>
+                  <input type="radio" id="question" name="radio" checked="checked" onclick="ShowHideDiv()">
+                  <label for="question">Question
+                  </label>
+                  <div class="check"></div>
+                </li>
+                <li>
+                  <input type="radio" id="comment" name="radio" onclick="ShowHideDiv()">
+                  <label for="comment">Comment
+                  </label>
+                  <div class="check"></div>
+                </li>
+                <li>
+                  <input type="radio" id="hiring" name="radio" onclick="ShowHideDiv()">
+                  <label for="hiring">Hiring
+                  </label>
+                  <div class="check"></div>
+                </li>
+                <div id="rateTxt" style="display: none">
+                  Hourly Rate:
+                  <input type="number" id="rate" placeholder="Hourly rate for hiring" />
+                </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea type="text" name="message" placeholder="Write Something..." style="height: 200px;"
+              required></textarea>
+          </div>
+          <br>
+          <div class="button-area">
+            <button type="submit">Send message</button>
+          </div>
+        </form>
+        <div id="thank" style="display: none;">
+          <p>Thank You!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section start -->
+  <footer>
+    <span>Made by Ansh Singh Sachdev</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
